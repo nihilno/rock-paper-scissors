@@ -1,0 +1,34 @@
+img, 
+svg{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    border: 0;
+    background: 0;
+    outline: 0;
+    cursor: pointer;
+    color: inherit;
+}
+
+.fw-bold{
+    font-weight: 700;
+}
+
+.spacing5{
+    letter-spacing: 0.05rem;
+}
+
+.spacing15{
+    letter-spacing: 0.15rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.duel{
+    display: none;
+}

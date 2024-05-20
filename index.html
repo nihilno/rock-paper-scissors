@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/modern.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main class="main container">
+      <section class="title flex">
+        <div class="title__logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <div class="title__score flex">
+          <p class="fw-bold spacing5">Score</p>
+          <span class="title__points fw-bold">12</span>
+        </div>
+      </section>
+      <section class="game">
+        <div class="game__panel">
+          <img src="images/bg-triangle.svg" alt="" class="game__triangle" />
+          <button value="paper" class="game__pick paper"></button>
+          <button value="scissors" class="game__pick scissors"></button>
+          <button value="rock" class="game__pick rock"></button>
+        </div>
+      </section>
+      <section class="duel">
+        <div class="duel__panel">
+          <div class="duel__data flex">
+            <p class="spacing15">You picked</p>
+            <div class="duel__pick"></div>
+          </div>
+          <div class="duel__data flex">
+            <p class="spacing15">The house picked</p>
+            <div class="duel__shadow">
+              <div class="game__pick_random duel__random"></div>
+            </div>
+          </div>
+          <div class="duel__winner">
+            <span class="duel__declaration"></span>
+            <button class="duel__btn spacing15">Play again</button>
+          </div>
+        </div>
+      </section>
+      <section class="rules">
+        <button class="rules__btn spacing15">Rules</button>
+      </section>
+      <section class="rules__overlay">
+        <div class="rules__container flex">
+          <h1>Rules</h1>
+          <img src="images/image-rules.svg" alt="" class="rules__img" />
+          <img src="images/icon-close.svg" alt="" class="rules__close" />
+        </div>
+      </section>
+    </main>
+    <script src="src/main.js"></script>
+  </body>
+</html>
